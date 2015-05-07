@@ -4,7 +4,7 @@
 
 - JS variables are `lowerCamelCase` when neccessary, single `word` variables preferred.
 
-- Variable names should be human readable and understandable (wrong: zzzzzsomeshithere, x1, x3).
+- Variable names should be human readable and understandable (wrong: `zzzzzsomeshithere`, `x1`, `x3`).
 
 - Things instantiated with `new` are `UpperCaseCamel`
 
@@ -23,7 +23,8 @@
 - Use comments judiciously to explain why things are the way they are.
 
 
-## Brackets
+## Newlines
+A newline after the start of a block helps you see it.
 
 *Right:*
 ```
@@ -32,6 +33,34 @@ var addFive(input){
   var output = input + 5;
 
   return output
+}
+
+for(var i = 0; i < 5; i++){
+
+  console.log(i);
+}
+```
+
+*Wrong:*
+```
+var addFive(input){  
+  var output = input + 5;
+  return output;}
+
+for(var i = 0; i < 5; i++){
+  console.log(i);
+}
+```
+
+## Brackets
+
+*Right:*
+```
+var addFive(input){
+
+  var output = input + 5;
+
+  return output;
 }
 
 for(var i = 0; i < 5; i++){
@@ -56,9 +85,7 @@ var addFive(input)
 
 for(var i = 0; i < 5; i++){
 
-  console.log(i);
-
-  }
+  console.log(i);}
 ```
 
 ## Always Enclose Blocks
