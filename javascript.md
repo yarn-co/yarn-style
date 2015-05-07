@@ -32,7 +32,7 @@ var addFive(input){
 
   var output = input + 5;
 
-  return output
+  return output;
 }
 
 for(var i = 0; i < 5; i++){
