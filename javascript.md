@@ -28,7 +28,7 @@ A newline after the start of a block helps you see it.
 
 *Right:*
 ```
-var addFive(input){
+function addFive(input){
 
   var output = input + 5;
 
@@ -43,7 +43,7 @@ for(var i = 0; i < 5; i++){
 
 *Wrong:*
 ```
-var addFive(input){  
+function addFive(input){  
   var output = input + 5;
   return output;}
 
@@ -56,7 +56,7 @@ for(var i = 0; i < 5; i++){
 
 *Right:*
 ```
-var addFive(input){
+function addFive(input){
 
   var output = input + 5;
 
@@ -76,11 +76,11 @@ if(test == true){
 
 *Wrong:*
 ```
-var addFive(input)
+function addFive(input)
 {  
   var output = input + 5;
 
-  return output
+  return output;
 }
 
 for(var i = 0; i < 5; i++){
